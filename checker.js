@@ -6,7 +6,7 @@ async function checkLeak() {
   const resultBox = document.getElementById("result");
 
   try {
-    const res = await fetch("leaked_data_60k.json");
+    const res = await fetch("leaked_data_400k.json");
     const data = await res.json();
 
     const messages = [];
@@ -39,4 +39,4 @@ async function checkLeak() {
     resultBox.className = "result leaked";
     resultBox.style.display = "block";
   }
-}
+    }
